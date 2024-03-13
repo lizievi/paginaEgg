@@ -1,0 +1,292 @@
+
+/* ------------------CSS GENERAL --------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -------------------NAVEGADOR ----------------*/
+#encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    background-image: radial-gradient(circle at 9.44% 107.92%, #662d47 0, #632742 12.5%, #4d1930 25%, #411227 37.5%, #370d20 50%, #2a0717 62.5%, #1c040f 75%, #14020a 87.5%, #070003 100%);
+}
+
+#check,
+.checkbtn {
+    display: none;
+}
+
+#encabezado h1 a{
+    font-family: "Dancing Script", cursive;
+}
+
+#encabezado ul {
+    display: flex;
+}
+
+#encabezado li {
+    list-style: none;
+    margin-left: 32px;
+}
+
+#encabezado a {
+    text-decoration: none;
+    color: #fff;
+}
+/* --------------SECCIÓN PRINCIPAL --------------*/
+
+#seccion_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-1 {
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.acerca-de {
+    height: 250px;
+    width: 30%;
+    /* background-color: #662d47; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.acerca-de h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+    color: #a05f7c;
+}
+
+.acerca-imagen{
+    height: 250px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.acerca-imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+/* ----------------SECCIÓN CARRUSEL --------------*/
+
+.seccion-2 {
+    width: 100%;
+    height: 500px;
+}
+
+.seccion-2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ----------------SECCIÓN TRABAJOS --------------*/
+.titulo-s {
+    line-height: 150px;
+    height: 100px;
+    text-align: center;
+    color: #a05f7c;
+    font-family: "Dancing Script", cursive;
+    font-size: 42px;
+}
+
+.seccion-3 {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap:wrap;
+    padding: 40px;
+}
+
+.block {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block h2 {
+    font-family: "Dancing Script", cursive;
+    color: #a05f7c;
+    font-size: 28px;
+    /* font-style: bold; */
+} 
+
+.block img {
+    width: 100%;
+    height: 240px;
+    object-fit: container;
+    border-radius: 20px 60px 20px 60px;
+}
+
+.block a {
+    text-decoration: none;
+    color: #ad718c;
+}
+
+.block a:hover {
+    color: #632742;
+    cursor: pointer;
+}
+
+ /* ----------------SECCIÓN CONTACTO --------------*/
+ .seccion-4 {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2dcdc;
+    margin: 20px;
+    padding: 20px;
+ }
+
+ .seccion-4 .form-row {
+    display: flex;
+    margin: 10px;
+ }
+
+ .seccion-4 label {
+    width: 120px;
+    text-align: end;
+    padding: 6px;
+    margin-right: 8px;
+ }
+
+ .seccion-4 input,
+ .seccion-4 textarea {
+    width: 300px;
+    border: 1px solid #632742 ;
+    border-radius: 8px;
+    padding: 6px;
+ }
+
+ .seccion-4 button {
+    padding: 10px 20px;
+    background-color:#632742;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+ }
+
+ .seccion-4 button:hover {
+    background-color: #411227;
+ }
+
+ /* ----------------PIE DE PÁGINA --------------*/
+
+footer{
+    font-style: italic;
+    font-size: 12px;
+    color: white;
+    height: 100px;
+    background-image: radial-gradient(circle at 9.44% 107.92%, #662d47 0, #632742 12.5%, #4d1930 25%, #411227 37.5%, #370d20 50%, #2a0717 62.5%, #1c040f 75%, #14020a 87.5%, #070003 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 32px;
+    margin: 20px auto;
+}
+
+/* -------------------QUERYS DE 0 A 768-------*/
+/* -------------------QUERYS DE 0 A 768-------*/
+/* -------------------QUERYS DE 0 A 768-------*/
+/* -------------------QUERYS DE 0 A 768-------*/
+
+@media (max-width: 768px){
+    /* -------------------NAVEGADOR ----------------*/
+    #encabezado {
+        padding: 6px;
+    }
+
+    #encabezado .checkbtn {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        line-height: 30px;
+        cursor: pointer;
+    }
+
+    #encabezado .navbar {
+        display: none;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #encabezado .active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top:54px;
+        left: 0%;
+        background-color: #411227;
+        /* transition: all 0.5s; */
+    }
+    
+    #encabezado .active .menu {
+        display: block;
+        text-align: center;
+    }
+
+    /* #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }  */
+
+    #encabezado .active .menu li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado .active .menu li a {
+        font-size: 20px;
+    }
+
+    #encabezado .active .menu li a:hover {
+        font-size: 24px;
+    }
+
+    /* ----------------SECCIÓN TRABAJOS --------------*/
+
+    .seccion-3 {
+        gap: 50px;
+    }
+
+    /* ----------------SECCIÓN CONTACTO --------------*/
+
+
+}
+
