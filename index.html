@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La web de Liz</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d5eec41513.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+    <header id="encabezado">
+        <h1 class="logo">
+            <a href="#" class="fuente-acento">Mi Web</a>
+        </h1>
+        <!-- <input type="checkbox" id="check"> -->
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="navbar"> 
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="#seccion_principal">Acerca de mí</a></li>
+                <li><a href="">Trabajos</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>    
+            
+    </header>
+    <main id="seccion_principal">
+        <section class="seccion-1">
+            <div class="acerca-de">
+                <h2>Acerca de mí</h2>
+                <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+                <p class="parrafo2"> Hola, mi nombre es Liz, quiero aprender a programar y trabajar de forma remota. Me gustan las películas de comedia y ciencia ficción</p>
+            </div>
+            <div class="acerca-imagen">
+                <img src="./img/hero.jpeg" alt="Videl y milk">
+            </div>
+        </section>
+        <section class="seccion-2">
+            <img class="img1" src="./img/carrusel.jpg" alt="">
+        </section>
+        <h2 class="titulo-s">Trabajos</h2>
+        <section class="seccion-3">
+            <div class="block">
+                <img src="./img/carrusel.jpg" alt="">
+                <h2>Recursos gratuitos</h2>
+                <p>Lorcaem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus a expedita libero quibusdam accusamus ducimus, illo reiciendis molestiae laboriosam autem, pariatur, eum perferendis aliquam nesciunt. Praesentium itaque dolorem optio!</p>
+                <a href="#">Saber más</a>
+            </div>
+            <div class="block">
+                <img src="./img/carrusel.jpg" alt="">
+                <h2>Recursos gratuitos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eius, ducimus impedit quis molestiae aperiam incidunt mollitia voluptatibus vel exercitationem provident sapiente harum maiores perspiciatis, natus vitae corrupti sunt alias.</p>
+                <a href="#">Saber más</a>
+            </div>
+            <div class="block">
+                <img src="./img/carrusel.jpg" alt="">
+                <h2>Recursos gratuitos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolorem deserunt ab quod, delectus aliquid sit vero officia dolorum accusantium nihil. Autem amet voluptas, necessitatibus minus veniam sit quidem sint.</p>
+                <a href="#">Saber más</a>
+            </div>
+        </section>
+        <h2 class="titulo-s">Contacto</h2>
+        <form action="#" method="get" class="formulario seccion-4" id="form">
+            <div class="form-row">
+              <label for="nombre">Nickname</label>
+              <input id="nombre" name="nombre" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="pepe@gmail.com" required/>
+            </div>
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit">Enviar</button>
+            </div>
+    
+            <p class="alertas" id="alertas"></p>
+          </form>
+    </main>
+    <footer id="contacto">
+        <p>Gracias por visitar mi página de prueba</p>
+        <div class="redes">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>         
+             
+        <h3>Liz se reserva los derechos de las imágenes compartidas </h3>
+
+        
+    </footer>  
+    <script src="./script.js"></script>
+</body>
+</html>
